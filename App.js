@@ -1,10 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Navbar from './Components/Navbar';
+import Screen1 from './Components/Screen1';
+import { RecoilRoot } from 'recoil';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <RecoilRoot>
+      <Navbar/>
+      <Screen1/>     
+      </RecoilRoot>
       <StatusBar style="auto" />
     </View>
   );
@@ -15,6 +21,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    // justifyContent: 'center',
+    marginTop:25
   },
 });
