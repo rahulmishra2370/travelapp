@@ -3,7 +3,7 @@ import { ScrollView, View, StyleSheet } from 'react-native';
 import Card from './Card';
 
 const HorizontalScrollView = () => {
-  
+  // Sample data for 8 cards (you can replace it with your actual data)
   const cards = [
     { id: 1, title: 'Mumbai', imageUrl: 'https://i.pinimg.com/564x/ac/a5/63/aca56396218cfb0bdb86c32e317284ba.jpg' },
     { id: 2, title: 'Chandigarh', imageUrl: 'https://i.pinimg.com/564x/28/5f/cc/285fcc0ce3df8f76713182d24b97fb4b.jpg' },
@@ -16,7 +16,7 @@ const HorizontalScrollView = () => {
   ];
 
   return (
-    <ScrollView horizontal>
+    <ScrollView horizontal showsHorizontalScrollIndicator={false}>
       <View style={styles.container}>
         {cards.map(card => (
           <Card key={card.id} title={card.title} imageUrl={card.imageUrl} />
