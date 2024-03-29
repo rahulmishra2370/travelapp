@@ -4,6 +4,9 @@ import Header from "./Components/Header";
 import Location from "./Components/Location";
 import HorizontalScrollView from "./Components/HorizontalScrollView";
 import Bigcards from "./Components/Bigcards";
+import Placetxt from "./Components/Placetxt";
+import Likes from "./Components/Likes";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
@@ -12,14 +15,18 @@ export default function App() {
       <Location />
       <HorizontalScrollView/>
       <Bigcards/>
+      <Placetxt/>
+      <Likes/>
+      <Footer/>
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flexGrow: 1,
+    
     backgroundColor: "#fff",
     alignItems: "center",
+    justifyContent:'flex-start'
   },
-});
+})

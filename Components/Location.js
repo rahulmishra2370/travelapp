@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "row",
     justifyContent: "space-around",
-    top: 50,
+    marginTop:10
   },
   countrynameconatiner: {
     justifyContent: "center",

@@ -64,12 +64,12 @@ export default function Bigcards() {
 
 const styles = StyleSheet.create({
   card: {
-    width: 327,
-    height: 345,
+    width: 310,
+    height: 480,
     margin: 10,
-    borderRadius: 15,
+    borderRadius: 20,
     overflow: 'hidden',
-    top:30
+    marginTop:45
   },
   image: {
     flex: 1,
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
   },
   peopleContainer: {
     flexDirection: 'row',
-    marginTop: 10,
+    marginTop: 40,
     width:152,
     height:34,
   },
@@ -131,13 +131,13 @@ const styles = StyleSheet.create({
     width: 34,
     height: 34,
     borderRadius: 99,
-    marginRight: 10,
+    marginHorizontal:2
   },
   numofpeoplecontainer:{
     width:100,
     height:17,
     flexDirection:'row',
-    left:190,
+    left:170,
     top:-30,
     justifyContent:'center',
     alignItems:'center',

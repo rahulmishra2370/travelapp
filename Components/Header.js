@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     height: "10%",
     width: "100%",
     flexDirection: "row",
+    marginTop:0
   },
   imgstyle: {
     width: 40,

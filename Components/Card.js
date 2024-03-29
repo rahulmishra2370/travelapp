@@ -12,14 +12,13 @@ const Card = ({ title, imageUrl }) => {
 };
 
 const styles = StyleSheet.create({
-  card: {
-    borderRadius: 10,
-    margin: 10,
-    width: 100,
-    height: 100,
-    top:70,
+  card: { 
+  margin:5,
+    width: 140,
+    height: 180,
+   marginTop:20,
     overflow: 'hidden',
-    borderRadius:15
+    borderRadius: 15 // Removed duplicate declaration
   },
   image: {
     width: '100%',
@@ -32,11 +31,12 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: 'bold',
     color: '#FFFFFF',
-    lineHeight:20,
+    lineHeight: 20,
     padding: 10,
     backgroundColor: 'rgba(0, 0, 0, 0)', 
-    paddingTop:60
+    // Removed paddingTop: 60
   },
 });
+
 
 export default Card;
